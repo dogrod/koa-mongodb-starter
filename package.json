@@ -1,6 +1,6 @@
 {
   "name": "start-koa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a koa practice project",
   "main": "app.js",
   "scripts": {
