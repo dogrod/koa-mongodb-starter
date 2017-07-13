@@ -1,0 +1,27 @@
+{
+  "name": "start-koa",
+  "version": "0.0.1",
+  "description": "a koa practice project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogrod/start-koa.git"
+  },
+  "keywords": [
+    "koa",
+    "node.js"
+  ],
+  "author": "dogrod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dogrod/start-koa/issues"
+  },
+  "homepage": "https://github.com/dogrod/start-koa#readme",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
