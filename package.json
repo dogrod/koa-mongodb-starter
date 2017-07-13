@@ -4,8 +4,11 @@
   "description": "a koa practice project",
   "main": "app.js",
   "scripts": {
+    "minor": "mversion minor -m 'chore: Bumped to v%s'",
+    "bump": "mversion patch -m 'chore: Bumped to v%s'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "push": "git pull && npm run bump && git push"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
   "homepage": "https://github.com/dogrod/start-koa#readme",
   "dependencies": {
     "koa": "^2.3.0"
+  },
+  "devDependencies": {
+    "mversion": "^1.10.1"
   }
 }
