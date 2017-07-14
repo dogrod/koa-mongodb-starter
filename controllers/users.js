@@ -3,11 +3,25 @@ const signin = async (ctx, next) => {
   const password = ctx.request.body.password || ''
 
   console.log(`signin with name: ${name}, password: ${password}`)
+
+  let res
+  ctx.type = 'json'
   if (name && password) {
-    ctx.response.body = `<h1>Welcome, ${name}</h1>`
+    res = {
+      code: 'success',
+      description: null,
+      result: {
+        name,
+      }
+    }
   } else {
-    ctx.response.body = `<h1>Login Failed!</h1>`
+    res = {
+      code: 'failed',
+      description: 'invalid username or password',
+      result: null
+    }
   }
+  ctx.response.body = res
 }
 
 module.exports = {
