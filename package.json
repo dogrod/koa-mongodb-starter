@@ -7,7 +7,7 @@
     "minor": "mversion minor -m 'chore: Bumped to v%s'",
     "bump": "mversion patch -m 'chore: Bumped to v%s'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "supervisor --harmony app",
     "push": "git pull && npm run bump && git push"
   },
   "repository": {
