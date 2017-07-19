@@ -2,7 +2,7 @@ const Koa = require('koa')
 
 const bodyParser = require('koa-bodyparser')
 // require controllers
-const controllers = require('./api.js')
+const controllers = require('./apis')
 
 const app = new Koa()
 

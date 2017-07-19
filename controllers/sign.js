@@ -1,5 +1,5 @@
-var models  = require('../models')
-var User    = models.User
+const models  = require('../models')
+const User    = models.User
 
 exports.signup = async (ctx, next) => {
   // get request body
