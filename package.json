@@ -27,7 +27,8 @@
   "dependencies": {
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.2.1"
+    "koa-router": "^7.2.1",
+    "mongoose": "^4.11.3"
   },
   "devDependencies": {
     "mversion": "^1.10.1"

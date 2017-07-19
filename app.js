@@ -2,9 +2,11 @@ const Koa = require('koa')
 
 const bodyParser = require('koa-bodyparser')
 // require controllers
-const controllers = require('./middleware/controllers')
+const controllers = require('./api.js')
 
 const app = new Koa()
+
+require('./models')
 
 // log request url
 app.use(async (ctx, next) => {

@@ -1,7 +1,7 @@
 const index = async (ctx, next) => {
   ctx.response.body = `<h1>Index</h2>
-    <form action="/signin" method="post">
-      <p>Name: <input name="name" value="koa"></p>
+    <form action="/signup" method="post">
+      <p>Name: <input name="username" value="koa"></p>
       <p>Password: <input name="password" value="password"></p>
       <p><input type="submit" value="Submit"></p>
     </form>`

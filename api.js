@@ -34,10 +34,10 @@ const addControllers = (router, dir) => {
 }
 
 module.exports = (dir) => {
-  const controllerDir = dir || 'controllers'
+  const apisDir = dir || 'api'
   // koa-router returns a function
   const router = require('koa-router')() // IIFE!!!! important
 
-  addControllers(router, controllerDir)
+  addControllers(router, apisDir)
   return router.routes()
 }
